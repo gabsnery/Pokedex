@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tumblr_static_pokedex">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="br.com.gabrielanery.pokedex.consultaPokemon"
+    android:padding="5dp"
+    android:background="@drawable/addd">
+
+
+        <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:id="@+id/gridLayout"
+            android:layout_below="@+id/gridLayout2"
+            android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Ataque 1"
+            android:id="@+id/textAtaque1"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:textColor="#000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/editAtaque12"
+            android:backgroundTint="@android:color/black"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:singleLine="true"
+            android:lines="1"
+            android:textSize="10dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Ataque 2"
+            android:id="@+id/textAtaque2"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:textSize="12dp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/editAtaque22"
+            android:backgroundTint="@android:color/black"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:singleLine="true"
+            android:lines="1"
+            android:textSize="10dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Ataque 3"
+            android:id="@+id/textAtaque3"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:textSize="12dp"
+            android:textColor="#000000" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/editAtaque32"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:backgroundTint="@android:color/black"
+            android:singleLine="true"
+            android:lines="1"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Ataque 4"
+            android:id="@+id/textAtaque4"
+            android:layout_row="6"
+            android:layout_column="0"
+            android:textSize="12dp"
+            android:textColor="#000000" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/editAtaque42"
+            android:layout_row="7"
+            android:textColor="#000000"
+            android:backgroundTint="@android:color/black"
+            android:singleLine="true"
+            android:lines="1"
+            android:layout_column="0"
+            android:textSize="10dp" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="200dp"
+        android:layout_height="110dp"
+        android:id="@+id/gridLayout2"
+        android:layout_marginTop="57dp"
+        android:layout_alignTop="@+id/imageView32"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Tipo"
+            android:id="@+id/textTipo"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:textColor="#000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:layout_width="158dp"
+            android:layout_height="40dp"
+            android:id="@+id/editTipo2"
+            android:backgroundTint="@android:color/black"
+            android:layout_row="1"
+            android:singleLine="true"
+            android:lines="1"
+            android:layout_column="0"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Localização"
+            android:id="@+id/textLocalizacao"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:textSize="12dp"
+            android:textColor="#000000" />
+
+        <EditText
+            android:layout_width="158dp"
+            android:layout_height="40dp"
+            android:id="@+id/editLocalizacao2"
+            android:layout_row="3"
+            android:singleLine="true"
+            android:lines="1"
+            android:layout_column="0"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+    </GridLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView32"
+        android:background="@drawable/imageview"
+        android:layout_marginRight="5dp"
+
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/editNome2"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/gridLayout2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar"
+        android:id="@+id/button2"
+        android:textColor="#000000"
+
+        android:onClick="editaPokemon"
+        android:background="@drawable/botao"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excluir"
+        android:textColor="#000000"
+
+        android:id="@+id/button3"
+        android:onClick="excluiPokemon"
+        android:background="@drawable/botao"
+
+
+        android:layout_below="@+id/gridLayout"
+        android:layout_alignEnd="@+id/botaoImagem2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolher imagem"
+        android:id="@+id/botaoImagem2"
+        android:textColor="#000000"
+        android:onClick="adicionaImagem2"
+        android:textSize="8dp"
+        android:background="@drawable/botao"
+        android:layout_below="@+id/imageView32"
+        android:layout_alignStart="@+id/imageView32"
+        android:layout_alignEnd="@+id/imageView32" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/editNome2"
+        android:layout_row="0"
+        android:singleLine="true"
+        android:lines="1"
+        android:layout_column="0"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/gridLayout2" />
+
+</RelativeLayout>
+    </ScrollView>

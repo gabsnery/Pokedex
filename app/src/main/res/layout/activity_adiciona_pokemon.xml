@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tools:context="br.com.gabrielanery.pokedex.adicionaPokemon"
+        android:padding="5dp"
+        android:background="@drawable/addd">
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:id="@+id/gridLayout"
+            android:layout_below="@+id/gridLayout3"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Ataque 1"
+                android:id="@+id/textView2"
+                android:textColor="#000000"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:textSize="12dp"
+                android:textIsSelectable="false" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/editAtaque1"
+                android:layout_row="1"
+                android:textColor="#000000"
+                android:layout_column="0"
+                android:textSize="10dp"
+                android:inputType="textCapCharacters" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Ataque 2"
+                android:id="@+id/textView3"
+                android:textColor="#000000"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:textSize="12dp"
+                android:textIsSelectable="false" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/editAtaque2"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:inputType="textCapCharacters" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Ataque 3"
+                android:id="@+id/textView4"
+                android:textColor="#000000"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:textSize="12dp"
+                android:textIsSelectable="false" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/editAtaque3"
+                android:layout_row="5"
+                android:layout_column="0"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:inputType="textCapCharacters" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Ataque 4"
+                android:id="@+id/textView5"
+                android:layout_row="6"
+                android:textColor="#000000"
+                android:layout_column="0"
+                android:textSize="12dp"
+                android:textIsSelectable="false" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/editAtaque4"
+                android:textColor="#000000"
+                android:layout_row="7"
+                android:layout_column="0"
+                android:textSize="10dp"
+                android:inputType="textCapCharacters" />
+
+        </GridLayout>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView32"
+            android:background="@drawable/imageview"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/gridLayout3" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escolher imagem"
+            android:id="@+id/button4"
+            android:onClick="adicionaImagem"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:layout_below="@+id/imageView32"
+            android:layout_alignEnd="@+id/imageView32"
+            android:layout_alignStart="@+id/imageView32"
+            android:background="@drawable/botao" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adicionar"
+            android:id="@+id/button2"
+            android:layout_row="8"
+            android:layout_column="0"
+            android:textColor="#000000"
+            android:onClick="adicionarClick"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_below="@+id/gridLayout"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/botao" />
+
+        <GridLayout
+            android:layout_width="200dp"
+            android:layout_height="110dp"
+            android:id="@+id/gridLayout3"
+            android:layout_marginTop="64dp"
+            android:layout_alignTop="@+id/imageView32"
+            android:layout_alignParentStart="true">
+
+            <EditText
+                android:layout_width="133dp"
+                android:layout_height="40dp"
+                android:id="@+id/editText2"
+                android:textColor="#000000"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:textSize="10dp"
+                android:inputType="textCapCharacters" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Localização"
+                android:textColor="#000000"
+                android:id="@+id/textView10"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:textSize="12dp"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Tipo"
+                android:textColor="#000000"
+                android:id="@+id/textView9"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:textSize="12dp"
+                android:textIsSelectable="false" />
+
+            <EditText
+                android:layout_width="132dp"
+                android:layout_height="40dp"
+                android:id="@+id/editText3"
+                android:textColor="#000000"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:textSize="10dp"
+                android:inputType="textCapCharacters" />
+        </GridLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nome"
+            android:id="@+id/textView6"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:textSize="12dp"
+            android:textIsSelectable="false"
+            android:textColor="#000000"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/editText"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:inputType="textCapCharacters"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/button4"
+            android:layout_toEndOf="@+id/textView6" />
+
+    </RelativeLayout>
+</ScrollView>
