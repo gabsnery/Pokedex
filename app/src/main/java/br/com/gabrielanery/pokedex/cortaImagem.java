@@ -85,12 +85,14 @@ public class cortaImagem extends AppCompatActivity {
 
     //Salva imagem e envia para activity adicionaPokemon
     public void salvar(View v) throws IOException {
+        Toast.makeText(cortaImagem.this,savedURL.toString(), Toast.LENGTH_LONG).show();
         Matrix matrix = new Matrix();
         matrix.setRotate(mCropImageView.getRotation());
         auxBitmap = Bitmap.createScaledBitmap(mCropImageView.getCroppedImage(),
                 mCropImageView.getCroppedImage().getWidth(),
                 mCropImageView.getCroppedImage().getHeight(),
                 true);
+
         auxBitmap = Bitmap.createBitmap(auxBitmap, 0, 0, auxBitmap.getWidth(), auxBitmap.getHeight(), matrix, true);
 
         ContentResolver cr = getContentResolver();
